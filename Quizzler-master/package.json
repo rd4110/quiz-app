@@ -1,0 +1,33 @@
+{
+	"name": "reactexpress",
+	"version": "1.0.0",
+	"description": "Starter kit for creating React and Express apps",
+	"main": "server.js",
+	"scripts": {
+		"start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+		"start:prod": "node server.js",
+		"start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+		"client": "cd client && npm run start",
+		"seed": "node scripts/seedDB.js",
+		"install": "cd client && npm install",
+		"build": "cd client && npm run build",
+		"heroku-postbuild": "npm run build"
+	},
+	"author": "You're a quizard harry",
+	"license": "MIT",
+	"devDependencies": {
+		"concurrently": "^3.6.1",
+		"nodemon": "^1.14.6"
+	},
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"cors": "^2.8.5",
+		"dotenv": "^8.2.0",
+		"express": "^4.16.2",
+		"if-env": "^1.0.4",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.9.20",
+		"react-router": "^5.2.0",
+		"react-router-dom": "^5.2.0"
+	}
+}

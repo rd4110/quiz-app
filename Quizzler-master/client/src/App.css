@@ -1,0 +1,142 @@
+/* General Styling */
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.card-img {
+	width: 75px;
+	height: 75px;
+}
+
+.links {
+	color: skyblue;
+}
+
+.btn-register,
+.btn-login,
+.btn-decks {
+	background-color: #afabb8;
+	color: white;
+	border-radius: 5px;
+}
+
+.btn-login {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.deck-border,
+.btn-decks,
+.deleteBtnStyle {
+	border: none;
+}
+
+.list-card {
+	box-shadow: 3px 5px 20px #bbbaba;
+	background-color: #f7f7f7;
+}
+
+.delete-btn {
+	width: 25px;
+	height: 25px;
+}
+
+.flipCards{
+    box-shadow: 5px 10px 18px #888888;
+}
+
+* {
+	box-sizing: border-box;
+}
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+}
+/* Styling for button group label spans */
+.bold {
+	font-weight: bold;
+	padding: 0.3rem;
+	text-decoration: underline;
+}
+
+a {
+	color: #3a4f77;
+	text-decoration: unset;
+}
+ul {
+	margin-left: 1.5rem;
+	list-style: none;
+}
+
+button,
+input[type='submit'] {
+	border: none;
+	padding: 0.5em;
+	margin: 0.5em;
+	background: none;
+	color: unset;
+	cursor: pointer;
+}
+
+h,
+p,
+ul,
+ol {
+	margin: 1em, 0;
+}
+/* Transition styles */
+.fade-enter {
+	opacity: 0.01;
+}
+
+.fade-enter-active {
+	opacity: 1;
+	transition: opacity 1000ms ease-in;
+}
+
+.fade-exit {
+	opacity: 1;
+}
+
+.fade-exit-active {
+	opacity: 0.01;
+	transition: opacity 500ms ease-in;
+}
+
+/* Form styles */
+.form label,
+.form input {
+	display: block;
+}
+.form input {
+	margin-bottom: 1rem;
+}
+.form label {
+	margin-bottom: 0.3rem;
+}
+.form input[type='text'],
+.form input[type='email'],
+.form input[type='password'] {
+	width: 35%;
+	padding: 0.5rem;
+}
+.page {
+	display: flex;
+	padding: 1rem;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 550px) {
+}
+
+.link {
+	text-decoration: underline;
+	text-decoration-color: blue;
+	color: blue;
+}
+
+.link:hover {
+	background-color: lightgrey;
+	cursor: pointer;
+}
